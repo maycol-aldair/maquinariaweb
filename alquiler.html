@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alquiler.css">
+    <title>Página con Video de Fondo</title>
+</head>
+<body>
+   
+    <div class="video-container">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="video1.mp4" type="video/mp4">
+            
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <div class="content">
+     
+        <h1>Registro de Flete de Maquinaria</h1>
+        <form id="registrationForm">
+            <label for="tipoMaquina">Tipo de Máquina:</label>
+            <input type="text" id="tipoMaquina" required>
+
+            <label for="dias">Días:</label>
+            <input type="number" id="dias" required>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" required>
+
+            <button type="button" onclick="guardarRegistro()">Guardar </button>
+        
+        </form>
+
+        <h2>Registros de Flete</h2>
+        <table id="fleteTable">
+            <thead>
+                <tr>
+                    <th>Tipo de Máquina</th>
+                    <th>Días</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">
+                    
+                    <span><h1>VOLVER</h1></span>
+                </a></li>
+                <li><a href="carro.html">
+                    
+                    <span><h1>COMPRA</h1></span>
+                </a></li>
+            </ul>
+        </nav>
+        </div>
+
+        
+    </div>
+    
+
+    <script src="alquiler.js"></script>
+</body>
+</html>

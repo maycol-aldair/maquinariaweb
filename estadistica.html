@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video de Fondo</title>
+    <link rel="stylesheet" href="estadistica.css">
+</head>
+<body>
+
+<video id="video-fondo" autoplay loop muted>
+    <source src="video1.mp4" type="video/mp4">
+    <!-- Añade más formatos de video según sea necesario -->
+    Tu navegador no soporta el elemento de video.
+</video>
+
+<div class="contenedor">
+    <h1>Estadísticas de Maquinaria Pesada</h1>
+    <canvas id="grafico"></canvas>
+</div>
+
+
+<button id="boton-flotante">
+    <a href="inicio.html"> VOLVER </a>
+</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="estadistica.js"></script>
+
+</body>
+</html>
